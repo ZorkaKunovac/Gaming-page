@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Tangerine&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/headerandfooter.css">
+    <style>
+        .half {
+            width: 50%;
+            float: left;
+        }
+        
+        #registerForm {
+            width: 50%;
+            margin: 5% auto;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: lightgray;
+            text-align: center;
+            padding: 3% 5%;
+        }
+        
+        .formicons {
+            display: inline;
+            font-size: 200%;
+            margin: 2% 3%;
+        }
+        
+        .formicons:hover {
+            color: white;
+            cursor: pointer;
+        }
+        
+        #groupForm-icons {
+            margin: 6% 0 3%;
+        }
+        
+        .half input {
+            margin: 4% auto 6%;
+            padding: 2%;
+            text-align: center;
+            background-color: lightgray;
+            outline: none;
+            width: 70%;
+            display: block;
+        }
+        
+        .half input:hover {
+            background-color: white;
+        }
+        
+        #submit {
+            width: 85%;
+            padding: 2%;
+            margin: 4% 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="main-container">
+        <div id="headerbg">
+            <header>
+                <div id="left-header">
+                    <ul>
+                        <li><a href="../html/index.html">Početna</a></li>
+                        <li>
+                            <div class="dropdown">
+                                <a href="../html/Recenzije.html">Recenzije</a>
+                                <div class="dropdown-content">
+                                    <a href="#">PC</a>
+                                    <a href="#">Playstation</a>
+                                    <a href="#">XBox</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="../html/Registracija.html">Registracija</a></li>
+                    </ul>
+                </div>
+
+                <div id="right-header">
+                    <ul>
+                        <li>
+                            <a href="../html/OMeni.html">O meni</a>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <a href="#"> Prijava</a>
+                                <div class="dropdown-content" style="right: 0; ">
+                                    <form class="header-login-form" action="#" method="post">
+                                        <p>Korisničko ime:</p>
+                                        <input type="text" name="username" value="" id="signin-username">
+                                        <p>Lozinka:</p>
+                                        <input type="password" name="password" value="" id="signin-password">
+
+                                        <div class="checkbox">
+                                            <input type="checkbox" value="forever" name="rememberme" id="signin-rememberme">
+                                            <label for="signin-rememberme">Remember Me</label>
+                                        </div>
+                                        <button class="Sign-in" name="submit">Sign in</button>
+                                        <br>
+
+                                        <span class="login-options"> <a href="#">Zaboravljena šifra?</a></span>
+                                        <span>|</span> <span class="login-options"> <a
+                                                href="../html/Registracija.html">Registracija</a></span>
+
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </header>
+
+
+
+
+            <form name="registerForm" method="post" action="" id="registerForm">
+                <h1>REGISTRACIJA</h1>
+
+                <div id="groupForm-icons">
+                    <div class="formicons" title="Registrirajte se preko Facebooka"><i class="fab fa-facebook-square"></i>
+                    </div>
+                    <div class="formicons" title="Registrirajte se preko Twittera"><i class="fab fa-twitter-square"></i>
+                    </div>
+                    <div class="formicons" title="Registrirajte se preko Instagrama"><i class="fab fa-instagram"> </i>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+                <div class="half">
+                    <input type="text" name="username" value="" placeholder="Korisničko ime" id="username">
+                    <input type="text" name="email" value="" placeholder="Email" id="email">
+                </div>
+
+                <div class="half">
+                    <input type="password" name="password" value="" placeholder="Lozinka" id="register-password">
+                    <input type="password" name="passwordRepeat" value="" placeholder="Ponovi lozinku" id="register-passwordRepeat">
+                </div>
+                <div class="clear"></div>
+
+                <input type="submit" id="submit" name="submit" value="Registriraj se">
+            </form>
+
+            <div id="social-networks">
+
+                <h2>Follow us on social networks!</h2>
+
+
+                <div id="network-icons">
+                    <div class="iconsbg"><i class="fab fa-facebook-square"></i>
+                        <p>Like on Facebook</p>
+                    </div>
+                    <div class="iconsbg"><i class="fab fa-twitter-square"></i>
+                        <p>Follow on Twitter</p>
+                    </div>
+                    <div class="iconsbg"><i class="fab fa-instagram"> </i>
+                        <p>Follow on Instagram</p>
+                    </div>
+                    <div class="iconsbg"><i class="fab fa-youtube"> </i>
+                        <p>Watch on YouTube</p>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <footer>
+                    2019 © Sva prava pridržana/All rights reserved
+                </footer>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/jquery.validate.js"></script>
+
+    <script>
+        $.validator.addMethod(
+            "regex",
+            function(value, element, regexp) {
+                var check = false;
+                return this.optional(element) || regexp.test(value);
+            },
+            "Please check your input."
+        );
+
+        $("#registerForm").validate({
+            rules: {
+                username: {
+                    required: true,
+                    minlength: 5
+                },
+
+                email: {
+                    required: true,
+                    regex: /^([a-z0-9_.+-])+\@([a-z0-9.])+([a-z])+$/
+                },
+
+                password: {
+                    required: true,
+                    minlength: 7,
+                    regex: /^[^\s]+$/
+                },
+
+                passwordRepeat: {
+                    required: true,
+                    minlength: 7,
+                    equalTo: "#password",
+                    regex: /^[^\s]+$/
+                }
+            },
+        });
+    </script>
+
+</body>
+
+</html>
